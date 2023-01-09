@@ -1,0 +1,54 @@
+body{ display: flex; margin: 0; font-family: sans-serif;}
+body > p:first-of-type {position: fixed; font-size: 40pt; left: 55%; margin-top: 5%;}
+.pictures{
+  position: fixed; top: 45px;
+  height: 89%; width: 495px;
+  padding: 2%; padding-right: 0;
+  background-color: #70905e;
+  display: grid; grid-template-columns: 100px 100px 100px 100px; grid-auto-rows: 67px; grid-column-gap: 4%; grid-row-gap: 2%;
+  overflow-y: auto;
+}
+.pictures > p {
+  width: 100px; height: 67px;
+  margin-bottom: 10px; margin-top: 10px;
+  background-repeat: no-repeat; background-size: 100%;
+  cursor: pointer;
+}
+.hint{ position: fixed; right: 0; background-color: #caeeb4; border: 2px solid #70905e;}
+.hint, .pictures {transition-duration: 1s; transform-origin: top;}
+.hint > p {width: 200px; height: 133px; margin: 10px; background-repeat: no-repeat; background-size: 100%;}
+.menu { width: 35%; height: 100%; border-right: 2px solid #70905e}
+.menu > div:nth-last-of-type(2) { background-color: #caeeb4}
+.menu > div:nth-last-of-type(2) > button {
+  height: 30px;
+  border: 0; border-radius: 20px;
+  margin-right: 4%;
+  background-color: #70905e;
+  color: #eff6d7;
+}
+.menu > div:nth-last-of-type(2) > button:hover {box-shadow: inset 2px -2px 3px 2px #385e23; cursor: pointer;}
+.elements {
+  height: 89%;
+  display: flex; flex-wrap: wrap;
+  padding: 3%; padding-left: 6%;
+  background-color: #eff6d7;
+  overflow-y: auto;
+}
+.elements > p {
+  width: 50px; height: 50px;
+  margin-right: 10px;
+}
+.elements > .activ {box-shadow: 0 0 3px 2px #385e23}
+.pole {
+  display: flex; flex-wrap: wrap;
+  width: 450px; height: 300px;
+  background-color: #eff6d7;
+  margin-top: 15%; margin-left: 15%;
+  border: 2px solid #70905e;
+}
+.pole > p {
+  margin: 0; padding: 0;
+  width: 50px; height: 50px;
+}
+.pole > p:hover { box-shadow: inset 0 0 5px 3px #70905e; cursor: pointer; }
+.elements > p:hover { cursor: pointer; }

@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="utf-1251">
+    <link href="css.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+  <p >Вы выиграли!</p>
+  <div class='menu'>
+    <div class='pictures' style="transform: scaleY(0.000001);"></div>
+    <div class='hint' style="transform: scaleY(0.000001);"><p></p></div>
+    <div style="display: flex; padding: 2%; padding-left: 10%">
+      <button type="button" onclick="hide('pictures')">Выбрать изображение</button> <button type="button" onclick="startGame()">Новая игра</button> <button type="button" onclick="hide('hint')">Подсказка</button>
+    </div>
+    <div class="elements"></div>
+  </div>
+  <div class='pole'></div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
